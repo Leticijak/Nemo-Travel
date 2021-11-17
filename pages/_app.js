@@ -1,4 +1,5 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { createGlobalStyle, ThemeProvider } from "styled-components"
+import "../styles/global.scss"
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -10,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
 
 const theme = {
   colors: {
-    primary: '#0070f3',
+    primary: "#0070f3",
   },
 }
 

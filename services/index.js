@@ -9,6 +9,13 @@ export const getPosts = async () => {
         edges {
           cursor
           node {
+            createdAt
+            slug
+            title
+            excerpt
+            featuredImage {
+              url
+            }
             author {
               bio
               name
@@ -17,16 +24,8 @@ export const getPosts = async () => {
                 url
               }
             }
-            createdAt
-            slug
-            title
-            excerpt
-            featuredImage {
-              url
-            }
-            categories {
-              name
-              slug
+            content {
+              text
             }
           }
         }

@@ -13,9 +13,11 @@ export default function Home({ posts }) {
   console.log(posts)
   return (
     <Layout>
-      {posts.map((p, i) => (
-        <CardPost key={i} post={p.node} />
-      ))}
+      <div className='container'>
+        {posts.map((p, i) => (
+          <CardPost key={i} post={p.node} />
+        ))}
+      </div>
     </Layout>
   )
 }
